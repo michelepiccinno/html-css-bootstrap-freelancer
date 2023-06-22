@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hamburger-color {
+  color: #888888;
+}
+
+hr,
+.fa-star {
+  display: inline-block;
+  vertical-align: middle;
+  border-width: 5px;
+  opacity: 1;
+}
+
+hr {
+  width: 8%;
+}
+
+.hero-img {
+  max-width: 200px;
+}
+
+.my-form-control {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  --bs-border-radius: 0;
+}
+
+.bg-primary {
+  --bs-primary-rgb: 26, 188, 156;
+}
+
+.bg-secondary {
+  --bs-secondary-rgb: 44, 62, 80;
+}
+
+.card.bckg-1 {
+  background-color: rgb(186, 75, 99);
+}
+
+.card.bckg-2 {
+  background-color: rgb(30, 164, 182);
+}
+
+.card.bckg-3 {
+  background-color: rgb(20, 15, 15);
+}
+
+.card.bckg-4 {
+  background-color: rgb(28, 131, 193);
+}
+
+.card.bckg-5 {
+  background-color: rgb(9, 52, 179);
+}
+
+.card.bckg-6 {
+  background-color: rgb(204, 178, 163);
+}
