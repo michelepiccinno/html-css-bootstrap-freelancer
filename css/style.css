@@ -29,12 +29,18 @@ hr {
   --bs-border-radius: 0;
 }
 
+
+
 .bg-primary {
   --bs-primary-rgb: 26, 188, 156;
 }
 
 .bg-secondary {
   --bs-secondary-rgb: 44, 62, 80;
+}
+
+.bg-success {
+  --bs-success-rgb: 58, 84, 109;
 }
 
 .card.bckg-1 {

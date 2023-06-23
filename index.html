@@ -101,7 +101,7 @@
       <hr>
       <div class="row justify-content-center">
         <div class="col-8 col-lg-10">
-          <form action="">
+          <form action="" class="position-relative mb-4">
             <div class="form-floating">
               <input type="name" class="form-control my-form-control" id="floatingInput" placeholder="Nome">
               <label for="floatingInput">Name</label>
@@ -115,10 +115,11 @@
               <label for="floatingPhone">Phone Number</label>
             </div>
             <div class="form-floating">
-              <textarea type="message" class="form-control my-form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
+              <textarea type="message" class="form-control my-form-control" placeholder="Leave a comment here"
+                id="floatingTextarea" style="height: 100px"></textarea>
               <label for="floatingTextarea">Message</label>
             </div>
-            <button class="btn bg-primary">Send</button>
+            <button class="btn bg-primary text-white position-absolute start-0">Send</button>
           </form>
         </div>
       </div>
@@ -126,25 +127,35 @@
   </section>
   </main>
 
-  <!-- SECTION ABOUT -->
   <footer>
+    <!-- SECTION LOCATION -->
     <section class="bg-success">
-      <div class="container">
-        <div class="row justify-content-center">
+      <div class="container text-white text-center">
+        <div class="row row-cols-1 row-cols-md-3">
           <div class="col">
-            <div class="box">
-              <h2 class="text-center">Location</h2>
-              <h2 class="text-center">Location</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse libero, tenetur culpa numquam perferendis
-                similique facilis quibusdam cum adipisci corrupti ex odio. Beatae vel sequi labore obcaecati sunt
-                mollitia eligendi.</p>
-            </div>
+            <h6>Location</h6>
+            <p>2215 John Daniel Drive Clark, MO 54243</p>
+          </div>
+          <div class="col">
+            <h6>Around the web</h6>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-google-plus"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+          </div>
+          <div class="col">
+            <h6>About Freelancer</h6>
+            <p>Freelance is a free to use, open source Bootstrap theme created by <a href="#">Start Bootstrap</a>.</p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- SECTION COPYRIGHT -->
     <section class="bg-secondary">
-      <p class="text-center">Copyright</p>
+      <div class="container text-center text-white">
+      <span>Copyright <i class="fa-regular fa-copyright"></i> Your Website 2019</span>
+    </div>
     </section>
   </footer>
 </body>
