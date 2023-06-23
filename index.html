@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,22 +20,38 @@
 <body>
   <!-- NAVBAR -->
   <header class="bg-secondary">
-    <nav class="container d-flex justify-content-between text-white">
-      <span>Start Bootstrap</span>
-      <i class="fa-solid fa-bars hamburger-color text-end border p-1 rounded d-sm-none"></i>
-      <ul class="list-unstyled d-none d-sm-flex">
-        <li>Portfolio</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav class="navbar navbar-expand-md bg-body-tertiary my-navbar">
+        <div class="container-fluid g-0">
+          <a class="navbar-brand text-white" href="#">Start Bootstrap</a>
+          <button class="navbar-toggler my-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main>
     <!-- HERO SECTION -->
     <section class="hero-section bg-primary">
       <div class="container text-center text-white">
-        <img class="hero-img" src="img/avatar.svg" alt="user-image">
+        <img class="hero-img pb-3" src="img/avatar.svg" alt="user-image">
         <h1>Start Bootstrap</h1>
         <hr>
         <i class="fa-solid fa-star"></i>
@@ -47,7 +66,7 @@
         <hr>
         <i class="fa-solid fa-star"></i>
         <hr>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 mt-3">
           <div class="col text-center">
             <img class="img-fluid rounded" src="img/cabin.png" alt="image of a house">
           </div>
@@ -78,16 +97,18 @@
         <i class="fa-solid fa-star"></i>
         <hr>
         <div class="row justify-content-center">
-          <div class="col-8 col-md-4 col-lg-5">
+          <div class="col-8 col-md-4 col-lg-5 mt-2">
             <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete
               source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy
               customization.</p>
           </div>
-          <div class="col-8 col-md-4 col-lg-5">
+          <div class="col-8 col-md-4 col-lg-5 mt-2">
             <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a
               graphic artist looking to share your projects, this template is the perfect starting point!</p>
           </div>
         </div>
+        <button type="button" class="btn btn-outline-primary mt-2"><i class="fa-solid fa-download"></i>
+          Download</button>
       </div>
     </section>
   </main>
@@ -138,14 +159,17 @@
           </div>
           <div class="col">
             <h6>Around the web</h6>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-google-plus"></i>
-            <i class="fa-brands fa-square-twitter"></i>
-            <i class="fa-brands fa-square-instagram"></i>
+            <div class="social fs-1">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-google-plus"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+            </div>
           </div>
           <div class="col">
             <h6>About Freelancer</h6>
-            <p>Freelance is a free to use, open source Bootstrap theme created by <a href="#">Start Bootstrap</a>.</p>
+            <p>Freelance is a free to use, open source Bootstrap theme created by <a href="#"
+                class="text-decoration-none">Start Bootstrap</a>.</p>
           </div>
         </div>
       </div>
@@ -154,8 +178,8 @@
     <!-- SECTION COPYRIGHT -->
     <section class="bg-secondary">
       <div class="container text-center text-white">
-      <span>Copyright <i class="fa-regular fa-copyright"></i> Your Website 2019</span>
-    </div>
+        <span>Copyright <i class="fa-regular fa-copyright"></i> Your Website 2019</span>
+      </div>
     </section>
   </footer>
 </body>
